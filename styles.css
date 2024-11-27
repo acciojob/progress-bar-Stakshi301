@@ -10,7 +10,7 @@
         color: grey;
     }
     
-    .class {
+    .circle {
         height: 40px;
         width: 40px;
         display: flex;
@@ -23,7 +23,7 @@
         transition: all 0.3s ease; /* Optional: smooth transition */
     }
     
-    .class::after {
+    .circle::after {
         content: "";
         position: absolute;
         top: 50%;
@@ -34,16 +34,16 @@
         transform: translateY(-50%); /* Adjust vertical alignment */
     }
     
-    .class:last-child::after {
+    .circle:last-child::after {
         display: none;
     }
     
-    .class.active:after{
+    .circle.active:after{
         background-color:#3498DB;
     }
 
     /* Active circle styles */
-    .class.active {
+    .circle .active {
         color: white;
         border-color: #3498DB;
         background-color: #3498DB; /* Change the background color of active circle */

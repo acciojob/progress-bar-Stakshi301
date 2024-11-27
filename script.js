@@ -1,6 +1,6 @@
 //your JS code here. If required.
 
-const circles=document.querySelectorAll('.class');
+const circles=document.querySelectorAll('.circle');
 const nextbtn=document.getElementById('next');
 const prevbtn=document.getElementById('prev');
 
