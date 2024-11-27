@@ -1,1 +1,80 @@
 /*  your css code here. If applicable */
+.main {
+
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        text-align: center;
+        color: grey;
+    }
+    
+    .class {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid grey;
+        border-radius: 50px;
+        margin-right: 45px;
+        position: relative; /* To position the pseudo-element */
+        transition: all 0.3s ease; /* Optional: smooth transition */
+    }
+    
+    .class::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        height: 3px;
+        width: 47.5px;
+        background-color: grey;
+        transform: translateY(-50%); /* Adjust vertical alignment */
+    }
+    
+    .class:last-child::after {
+        display: none;
+    }
+    
+    .class.active:after{
+        background-color:#3498DB;
+    }
+
+    /* Active circle styles */
+    .class.active {
+        color: white;
+        border-color: #3498DB;
+        background-color: #3498DB; /* Change the background color of active circle */
+    }
+    
+    .buttons {
+       position: absolute;
+       left: 33%;
+        margin-top: 20px;
+    }
+    
+    #next, #prev {
+        width: 100px;
+        padding: 10px;
+        color: white;
+        background-color: #3498DB;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    #next:hover, #prev:hover {
+        background-color: #2980b9;
+    }
+    
+    #prev:disabled {
+        background-color: grey;
+        cursor: not-allowed;
+    }
+
+    #next:disabled{
+        background-color: gray;
+        cursor: not-allowed;
+    }
+    
